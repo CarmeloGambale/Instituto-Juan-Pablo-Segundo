@@ -1,7 +1,7 @@
 /*FONT FAMILY*/
 
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap");
- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap");
+
 /*PALETA DE COLORES*/
 
 :root {
@@ -42,7 +42,10 @@ html {
   background-color: var(--gris-1);
   color: var(--azul);
 }
-
+.titulo_principal {
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 /*--------------------------------------------------------*/
 .imagen-logo {
   height: 100px;
@@ -110,10 +113,55 @@ footer {
 }
 
 /*-----------------------GALERIA---------------------------------*/
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+
+.img-gallery {
+  width: 80%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+.img-gallery img:hover {
+  transform: scale(1.2);
+}
+.ful-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.ful-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.ful-img img {
+  width: 90%;
+  max-width: 600px;
+}
+@media screen and (max-width: 800px) {
+  .img-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /*--------------------------------------------------------*/
 /*-- ANIMACIONES --*/
 
@@ -302,7 +350,7 @@ nav {
   left: 0;
   height: 70px;
   width: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.349);
   z-index: 100;
   text-align: center;
   color: #000;
@@ -328,8 +376,8 @@ nav .nav-bar .sidebarOpen {
   display: none;
 }
 nav .nav-bar .logo a {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   color: black !important;
   text-decoration: none;
 }
@@ -372,7 +420,7 @@ nav .nav-bar .logo a {
 .nav-links li:hover a::before {
   opacity: 1;
 }
-@media (max-width: 840px) {
+@media (max-width: 1000px) {
   nav .nav-bar .sidebarOpen {
     display: block;
     color: #000;
@@ -388,7 +436,9 @@ nav .nav-bar .logo a {
     z-index: 100;
     transition: all 0.4s ease;
     color: black;
-    
+  }
+  .imagen-logo {
+    height: 100px;
   }
   nav.active .menu {
     left: -0%;

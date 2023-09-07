@@ -25,7 +25,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--bootstrap icon-->
     <link
       rel="stylesheet"
@@ -43,6 +46,13 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Animaciones CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animaciones CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- SimpleLightbox plugin CSS-->
     <link
@@ -71,25 +81,31 @@
     <!-------------------------------------------------------- NAVBAR ------------------------------------------------------------->
     <nav>
       <div class="nav-bar">
-          <i class='bx bx-menu sidebarOpen' ></i>
-          <span class="logo navLogo"><img src="assets/img/logo_2.jpeg" alt="" class="imagen-logo"><a href="#" class="navlogo2">InstitutoJuanPabloII</a></span>
-          <div class="menu">
-              <div class="logo-toggle">
-                  <span class="logo"><a href="#" class="logo-2">InstitutoJuanPabloII</a></span>
-                  <i class='bx bx-x siderbarClose'></i>
-              </div>
-              <ul class="nav-links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"
+          ><img src="assets/img/logo_2.jpeg" alt="" class="imagen-logo" /><a
+            href="#"
+            class="navlogo2"
+            >InstitutoJuanPabloII</a
+          ></span
+        >
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"
+              ><a href="#" class="logo-2">InstitutoJuanPabloII</a></span
+            >
+            <i class="bx bx-x siderbarClose"></i>
           </div>
-
+          <ul class="nav-links">
+            <li><a href="#">Incio</a></li>
+            <li><a href="#">¿Quienes Somoes?</a></li>
+            <li><a href="#">Inscripción</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-  </nav>
-
+    </nav>
 
     <!-------------------------------------------------------- HEADER / HERO ------------------------------------------------------------->
 
@@ -100,7 +116,7 @@
           class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
         >
           <div class="col-lg-8 align-self-end">
-            <h1 class="text-white font-weight-bold">
+            <h1 class="titulo_principal text-white font-weight-bold">
               Instituto Superior de Formación Docente y Técnica Juan Pablo II
             </h1>
             <hr class="divider" />
@@ -194,7 +210,8 @@
                 distintas fichas que deberas rellenar y enviar, además de
                 información adicional.
                 <a class="btn btn-light btn-xl" href="#services"
-                >Descargue Aqui</a>
+                  >Descargue Aqui</a
+                >
               </p>
             </div>
           </div>
@@ -214,51 +231,53 @@
     <!-------------------------------------------------------- PORTFOLIO / GALERIA DE IMAGENES ------------------------------------------------------------->
 
     <!-- Portfolio-->
-    <div id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 1.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 1.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 3.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 3.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 4.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 4.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 5.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 5.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 6.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 6.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 8.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 8.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 7.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 7.jpeg" alt="..." />
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="assets/img/imagen 9.jpeg">
-              <img class="img-fluid" src="assets/img/imagen 9.jpeg" alt="..." />
-            </a>
-          </div>
-        </div>
-      </div>
+
+    <div class="ful-img" id="fulImgBox">
+      <img src="imgs/1.jpg" id="fulImg" alt="" />
+      <span onclick="closeImg()">X</span>
+    </div>
+    <h2 class="text-center mt-0"><span>Galeria de Imagenes</span></h2>
+    <div class="img-gallery">
+      <img
+        src="./assets/img/imagen 1.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 3.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 4.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 5.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 6.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 7.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 8.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
+      <img
+        src="./assets/img/imagen 9.jpeg"
+        onclick="openFulImg(this.src)"
+        alt=""
+      />
     </div>
 
     <!-------------------------------------------------------- SECTION CALL TO ACTION / CONTACTO A WPP CON BOTON ------------------------------------------------------------->
@@ -293,13 +312,6 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
               <!-- Name input-->
               <div class="form-floating mb-3">
@@ -540,33 +552,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script>
-      const body = document.querySelector("body"),
-          nav = document.querySelector("nav"),
-          modeToggle = document.querySelector(".dark-light"),
-          searchToggle = document.querySelector(".searchToggle"),
-          sidebarOpen = document.querySelector(".sidebarOpen"),
-          siderbarClose = document.querySelector(".siderbarClose");
-          let getMode = localStorage.getItem("mode");
-              if(getMode && getMode === "dark-mode"){
-                body.classList.add("dark");
-              }   
-      //   js code to toggle sidebar
-      sidebarOpen.addEventListener("click" , () =>{
-        nav.classList.add("active");
-      });
-      body.addEventListener("click" , e =>{
-        let clickedElm = e.target;
-        if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-            nav.classList.remove("active");
-        }
-      });
-      </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 
   <link
