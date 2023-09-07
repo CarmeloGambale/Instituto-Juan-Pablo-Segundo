@@ -126,7 +126,7 @@ footer {
 .img-gallery img {
   width: 100%;
   cursor: pointer;
-  transition: 1s;
+  transition: 1.2s;
 }
 .img-gallery img:hover {
   transform: scale(1.2);
