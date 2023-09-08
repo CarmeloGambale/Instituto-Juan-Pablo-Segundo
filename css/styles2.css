@@ -84,8 +84,9 @@ header.masthead {
       rgba(92, 77, 66, 0.8) 100%
     ),
     url("../assets/img/fondo_pelotas.webp");
-/*     background-image: url(../assets/img/fondo_pelotas.webp);
- */  background-position: center;
+  /*     background-image: url(../assets/img/fondo_pelotas.webp);
+ */
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -237,6 +238,19 @@ nav .nav-bar .logo a {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .img_hero {
+    width: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .img_hero {
+    width: 250px;
+  }
+}
+
 /*--------------------------------------------------------*/
 
 /*QUIENES SOMOS*/
