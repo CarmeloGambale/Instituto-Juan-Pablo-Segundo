@@ -194,6 +194,10 @@ nav .nav-bar .logo a {
   background-color: var(--azul-logo-nuevo) !important;
 }
 
+.btn-header:hover {
+  background-color: var(--azul-logo-nuevo) !important;
+}
+
 @media (max-width: 1000px) {
   nav .nav-bar .sidebarOpen {
     display: block;
