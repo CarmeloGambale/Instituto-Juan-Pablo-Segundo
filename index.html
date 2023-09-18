@@ -126,7 +126,7 @@
             </h1> -->
 
             <img
-              src="./assets/img/Logo_canva.svg"
+              src="./assets/img/Logotipo_instituto_juan_pablo.svg"
               alt="logo"
               class="img_hero"
             />
@@ -137,7 +137,7 @@
             <p class="text-white-75 mb-5">
               Instituto Superior de Formación Docente y Técnica Juan Pablo II
             </p>
-            <a class="btn btn-primary btn-xl btn_color" href="#about"
+            <a class="btn-header btn btn-primary btn-xl btn_color" href="#about"
               >¡Ver mas!</a
             >
           </div>
@@ -148,7 +148,7 @@
     <!-------------------------------------------------------- SECTION ABOUT / QUIENES SOMOS ------------------------------------------------------------->
 
     <!-- About-->
-    <section class="page-section bg-primary back_color" id="about">
+    <section class="sobrenosotros page-section bg-primary back_color" id="about">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
@@ -183,7 +183,7 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <div class="mb-2">
-                <i class="bi bi-watch fs-1 text-primary"></i>
+                <i class="logos-inscripcion bi bi-watch fs-1 text-primary"></i>
               </div>
               <h3 class="h4 mb-2">
                 Fecha de Inscripción y Horarios de Oficina
@@ -198,14 +198,14 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <div class="mb-2">
-                <i class="bi bi-journals fs-1 text-primary"></i>
+                <i class="logos-inscripcion bi bi-journals fs-1 text-primary"></i>
               </div>
               <h3 class="h4 mb-2">Plan de Estudio</h3>
               <p class="text-muted mb-0">
                 Si estas interesado en saber las materias en los distintos años
                 de la carrera no dudes en descargar el plan de estudio
               </p>
-              <a class="btn btn-primary btn-xl" href="#services"
+              <a class="btn-servicios btn btn-primary btn-xl" href="#services"
                 >Descargue Aqui</a
               >
             </div>
@@ -213,7 +213,7 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <div class="mb-2">
-                <i class="bi bi-file-earmark-check-fill fs-1 text-primary"></i>
+                <i class="logos-inscripcion bi bi-file-earmark-check-fill fs-1 text-primary"></i>
               </div>
               <h3 class="h4 mb-2">Documentación Requerida</h3>
               <p class="text-muted mb-0">
@@ -222,7 +222,7 @@
                 distintas fichas que deberas rellenar y enviar, además de
                 información adicional.
               </p>
-              <a class="btn btn-primary btn-xl" href="#services"
+              <a class="btn-servicios btn btn-primary btn-xl" href="#services"
                 >Descargue Aqui</a
               >
             </div>
@@ -230,15 +230,16 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <div class="mb-2">
-                <i class="bi bi-whatsapp fs-1 text-primary"></i>
+                <i class="logos-inscripcion bi bi-whatsapp fs-1 text-primary"></i>
               </div>
               <h3 class="h4 mb-2">Comunicate con Nosotros</h3>
               <p class="text-muted mb-0">
                 Una vez que finalizaste de rellenar los formularios contacte por
                 via whatsapp o por mail, para que validen tu Inscripción y se
-                contacten contigo para seguir con la Inscripción.
+                contacten contigo para finalizar con la Inscripción.
               </p>
-              <a class="btn btn-primary btn-xl" href="#about">Contacto</a>
+              <a class="btn-servicios btn btn-primary btn-xl" href="#about">Contacto por mail</a>
+              <a class="btn-servicios btn btn-primary btn-xl" href="#about">Contacto por whatsapp</a>
             </div>
           </div>
         </div>
@@ -299,18 +300,49 @@
 
     <!-------------------------------------------------------- SECTION CALL TO ACTION / CONTACTO A WPP CON BOTON ------------------------------------------------------------->
 
-    <!-- Call to action
-    <section class="page-section bg-dark text-white">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">Escribinos por whatsapp!</h2>
-        <a
-          class="btn btn-light btn-xl"
-          href="https://startbootstrap.com/theme/creative/"
-          >WHATSAPP!</a
-        >
+    <section id="section_counter">
+      <div class="container">
+        <!--         <h1 class="section-heading">We've completed</h1>
+ -->
       </div>
-    </section>-->
-
+      <div class="container">
+        <div class="counter-grid">
+          <div class="counter-item">
+            <img
+              src="./assets/countup/app-number-counter-student.svg"
+              alt="Image"
+              class="counter-img"
+            />
+            <h1 class="counter" data-target="10">0</h1>
+            <p>+</p>
+          </div>
+          <div class="counter-item">
+            <img
+              src="./assets/countup/app-number-counter-student.svg"
+              alt="Image"
+              class="counter-img"
+            />
+            <h1 class="counter" data-target="500">0</h1>
+          </div>
+          <div class="counter-item">
+            <img
+              src="./assets/countup/app-number-counter-student.svg"
+              alt="Image"
+              class="counter-img"
+            />
+            <h1 class="counter" data-target="80">0</h1>
+          </div>
+          <div class="counter-item">
+            <img
+              src="./assets/countup/app-number-counter-student.svg"
+              alt="Image"
+              class="counter-img"
+            />
+            <h1 class="counter" data-target="60">0</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-------------------------------------------------------- SECTION CONTACTO / EMAIL ------------------------------------------------------------->
 
     <!-- Contact-->
@@ -419,7 +451,7 @@
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn-enviar btn btn-primary btn-xl disabled"
                   id="submitButton"
                   type="submit"
                 >
@@ -468,49 +500,7 @@
     ></script>
     <div class="elfsight-app-3f221b4b-391c-4f38-83cf-ac6e283b72f1"></div>
  -->
-    <section id="section_counter">
-      <div class="container">
-        <!--         <h1 class="section-heading">We've completed</h1>
- -->
-      </div>
-      <div class="container">
-        <div class="counter-grid">
-          <div class="counter-item">
-            <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <h1 class="counter" data-target="10">0</h1>
-            <p>+</p>
-          </div>
-          <div class="counter-item">
-            <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <h1 class="counter" data-target="500">0</h1>
-          </div>
-          <div class="counter-item">
-            <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <h1 class="counter" data-target="80">0</h1>
-          </div>
-          <div class="counter-item">
-            <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <h1 class="counter" data-target="60">0</h1>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-------------------------------------------------------- FOOTER ------------------------------------------------------------->
 
