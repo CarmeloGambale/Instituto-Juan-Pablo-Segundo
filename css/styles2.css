@@ -178,7 +178,7 @@ nav .nav-bar .logo a {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: var(--naranja2-logo);
+  background-color: var(--rojo-logo-nuevo);
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -187,7 +187,7 @@ nav .nav-bar .logo a {
 }
 
 .nav-links li a:hover {
-  color: var(--naranja2-logo) !important;
+  color: var(--rojo-logo-nuevo) !important;
   transition: 0.5s;
 }
 .btn-header {
