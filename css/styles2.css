@@ -616,12 +616,19 @@ nav .nav-bar .logo a {
 
 @media screen and (max-width: 415px) {
   .iframe_mapa {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
   }
 
   .mapa_iframe p {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .iframe_mapa {
+    width: 300px;
+    height: 300px;
   }
 }
 
