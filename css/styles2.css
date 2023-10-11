@@ -448,7 +448,7 @@ nav .nav-bar .logo a {
   /*   margin-bottom: 10rem;
  */
 
-  background-color: var(--azul-francia);
+  /*background-color: var(--azul-francia);*/
 }
 
 #section_counter .section-heading {
@@ -480,12 +480,13 @@ nav .nav-bar .logo a {
   width: 7rem;
   height: 7rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 0.1rem white);
+  
 }
 
 .counter-img:nth-child(1) {
-  width: 9rem;
+  width: 8rem;
   height: auto;
+  color: var(--rojo-logo-nuevo)!important;
 }
 
 /* .counter-item:hover {
@@ -498,6 +499,7 @@ nav .nav-bar .logo a {
   color: transparent;
   color: transparent;
   letter-spacing: 0.5rem;
+  color: var(--rojo-logo-nuevo)!important;
   /* -webkit-text-stroke-width: 0.15rem;
   -moz-text-stroke-width: 0.15rem;
   -ms-text-stroke-width: 0.15rem;
@@ -520,11 +522,12 @@ nav .nav-bar .logo a {
 
 .counter {
   color: var(--white) !important;
+  font-family: "Poppins", sans-serif;
 }
 
 .counter_p {
   margin-top: 1rem;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 420px) {
