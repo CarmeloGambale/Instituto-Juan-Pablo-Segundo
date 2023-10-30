@@ -331,6 +331,12 @@ nav .nav-bar .logo a {
 .logos-inscripcion {
   color: var(--rojo-logo-nuevo) !important;
 }
+@media screen and (max-width: 420px) {
+  .logos-inscripcion{
+    width: 3rem;
+    height: 4rem;
+  }
+}
 
 /*--------------------------------------------------------*/
 
@@ -413,7 +419,7 @@ nav .nav-bar .logo a {
 /*count up */
 
 :root {
-  --container: 112rem;
+  --container: 100%;
   --m-auto: 0 auto;
   --white: #fff;
   --bg-hero: #251c5a;
@@ -441,15 +447,15 @@ nav .nav-bar .logo a {
   align-items: center;
   justify-content: center;
 } */
-#section_counter {
-  padding: 10rem 0;
+/* #section_counter {
+  /* padding: 10rem 0; */
   /*   background: var(--bg-counter);
  */
   /*   margin-bottom: 10rem;
  */
 
   /*background-color: var(--azul-francia);*/
-}
+
 
 #section_counter .section-heading {
   padding-bottom: 5rem;
@@ -477,14 +483,14 @@ nav .nav-bar .logo a {
 }
 
 .counter-img {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   object-fit: contain;
   
 }
 
 .counter-img:nth-child(1) {
-  width: 8rem;
+  width: 6rem;
   height: auto;
   color: var(--rojo-logo-nuevo)!important;
 }
@@ -495,7 +501,7 @@ nav .nav-bar .logo a {
   transition: all 0.5s ease-in-out;
 } */
 .counter-item .counter {
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: transparent;
   color: transparent;
   letter-spacing: 0.5rem;
@@ -535,7 +541,15 @@ nav .nav-bar .logo a {
     display: flex;
     justify-content: center;
   }
-
+  .counter-img:nth-child(1) {
+    width: 4rem;
+    height: auto;
+    color: var(--rojo-logo-nuevo)!important;
+  }
+  
+  .counter-item .counter{
+    font-size: 2rem;
+  }
   .counter-item {
     padding: 3rem 0rem;
   }
