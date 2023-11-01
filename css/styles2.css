@@ -297,6 +297,28 @@ nav .nav-bar .logo a {
   }
 }
 
+.container_navlog {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-height: 800px) {
+  header.masthead {
+    min-height: 50rem;
+  }
+}
+
+.container_header_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.texto_diagep {
+  font-size: 14px !important;
+}
+
 /*--------------------------------------------------------*/
 
 /*QUIENES SOMOS*/
@@ -1020,3 +1042,8 @@ footer {
 }
 
 /*--------------------------------------------------------*/
+
+textarea {
+  min-height: 200px !important;
+  max-height: 500px !important;
+}
