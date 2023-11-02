@@ -243,9 +243,9 @@ nav .nav-bar .logo a {
     left: -0%;
   }
 
-  .navlogo2 {
+  /* .navlogo2 {
     display: none;
-  }
+  } */
 
   .logo-2 {
     color: black !important;
@@ -317,6 +317,17 @@ nav .nav-bar .logo a {
 
 .texto_diagep {
   font-size: 14px !important;
+}
+
+@media (max-width: 400px) {
+  .navlogo2,
+  .texto_diagep {
+    font-size: 14px !important;
+  }
+
+  nav .nav-bar {
+    padding: 0 2px;
+  }
 }
 
 /*--------------------------------------------------------*/
