@@ -107,6 +107,10 @@ header.masthead {
   justify-content: center;
 }
 
+.section_contacto {
+  padding: 10rem 0 !important;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -357,6 +361,17 @@ nav .nav-bar .logo a {
 
 .logos-inscripcion {
   color: var(--rojo-logo-nuevo) !important;
+}
+
+/*--------------------------------------------------------*/
+
+/*vision mision*/
+
+@media (min-width: 992px) {
+  .pad_lg {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
 }
 
 /*--------------------------------------------------------*/
