@@ -419,7 +419,7 @@ nav .nav-bar .logo a {
 /*count up */
 
 :root {
-  --container: 100%;
+  --container: 130rem;
   --m-auto: 0 auto;
   --white: #fff;
   --bg-hero: #251c5a;
