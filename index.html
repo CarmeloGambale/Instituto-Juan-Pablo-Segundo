@@ -6,16 +6,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Instituto Juan Pablo II" />
     <meta name="author" content="Instituto Juan Pablo II" />
 
     <meta
       name="keywords"
-      content=" maquinistasavio, savio, profesorado, educacionfisica, Instituto, carrera"
+      content=" maquinistasavio, savio, profesorado, educacionfisica, Instituto, carrera profesor"
     />
     <meta name="language" content="spanish" />
 
     <title>Instituto Juan Pablo II - Home</title>
+
+    <meta name="title" content="Instituto Juan Pablo II - Home" />
+    <meta
+      name="description"
+      content="Instituto Superior de Formación Docente y Técnica Juan Pablo II"
+    />
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="./assets/img/icono.svg" />
@@ -73,6 +78,47 @@
 
     <!--css personal-->
     <link rel="stylesheet" href="css/styles2.css" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://institutojuanpabloii.com/" />
+    <meta property="og:title" content="Instituto Juan Pablo II - Home" />
+    <meta
+      property="og:description"
+      content="Instituto Superior de Formación Docente y Técnica Juan Pablo II"
+    />
+    <meta
+      property="og:image"
+      content="https://institutojuanpabloii.com/assets/img/metatags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://institutojuanpabloii.com/" />
+    <meta property="twitter:title" content="Instituto Juan Pablo II - Home" />
+    <meta
+      property="twitter:description"
+      content="Instituto Superior de Formación Docente y Técnica Juan Pablo II"
+    />
+    <meta
+      property="twitter:image"
+      content="https://institutojuanpabloii.com/assets/img/metatags.png"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T53D8VE18D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T53D8VE18D");
+    </script>
   </head>
 
   <!-------------------------------------------------------- BODY ------------------------------------------------------------->
@@ -81,22 +127,34 @@
     <!-------------------------------------------------------- NAVBAR ------------------------------------------------------------->
     <nav class="border-bottom">
       <div class="nav-bar">
-        <span class="logo navLogo"
-          ><img
-            src="assets/img/Logotipo_instituto_juan_pablo.svg"
-            alt="logo"
-            class="imagen-logo"
-          /><a href="#page-top" class="navlogo2"
-            >Instituto Juan Pablo II</a
-          ></span
-        >
+        <div class="container_header_1">
+          <span class="logo navLogo">
+            <a href="#page-top">
+              <img src="assets/img/icono.svg" alt="logo" class="imagen-logo" />
+            </a>
+          </span>
+
+          <div class="container_navlog">
+            <span class="logo navLogo">
+              <a href="#page-top" class="navlogo2"
+                >Instituto Juan Pablo II</a
+              ></span
+            >
+            <span class="logo navLogo">
+              <a href="#page-top" class="navlogo2 texto_diagep"
+                >DIEGEP 8365</a
+              ></span
+            >
+          </div>
+        </div>
+
         <i class="bx bx-menu sidebarOpen"></i>
 
         <div class="menu">
           <div class="logo-toggle">
             <span class="logo"
               ><a href="#page-top" class="logo-2"
-                >Instituto Juan Pablo II</a
+                >Instituto Juan Pablo II <br />DIAGEP 8365</a
               ></span
             >
             <i class="bx bx-x siderbarClose"></i>
@@ -121,14 +179,6 @@
           class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
         >
           <div class="col-lg-8 align-self-end">
-            <!-- <h1 class="titulo_principal text-white font-weight-bold">
-              Instituto Superior de Formación Docente y Técnica Juan Pablo II
-            </h1> -->
-
-            <!-- <h1 class="titulo_principal text-white font-weight-bold">
-              Instituto Juan Pablo II
-            </h1> -->
-
             <img
               src="./assets/img/Logotipo_instituto_juan_pablo.svg"
               alt="logo"
@@ -139,7 +189,10 @@
           </div>
           <div class="col-lg-8 align-self-baseline">
             <p class="text-white-75 mb-5">
-              Instituto Superior de Formación Docente y Técnica Juan Pablo II
+              Somos un Instituto oficial registrado bajo Diegep N° 8365. <br />
+              El título que les brindamos a nuestros egresados se encuentra bajo
+              la resolución N° 2342/09 <br />
+              y es el de PROFESOR/A DE EDUCACIÓN FÍSICA con validez nacional.
             </p>
             <a
               class="btn-header btn btn-primary btn-xl btn_color button-27"
@@ -200,7 +253,7 @@
                 Fecha de Inscripción y Horarios de Oficina
               </h3>
               <p class="text-muted mb-0">
-                La Inscripción del ciclo electivo 2023 es a partir del 1ro de
+                La Inscripción del ciclo electivo 2024 es a partir del 1ro de
                 agosto. Los horarios de Oficina son: De lunes a viernes de 18 hs
                 a 21 hs.
               </p>
@@ -264,7 +317,7 @@
 
               <a
                 class="btn-servicios btn btn-primary btn-xl button-27 ins"
-                href="mailto:Arielgomezdeportes@icloud.com"
+                href="mailto: inst.juanpablo02@gmail.com"
                 >Contacto por mail</a
               >
 
@@ -275,6 +328,46 @@
                 >Contacto por WhatsApp</a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------- vision - mision ------------------------------------------------------------->
+
+    <!-- About-->
+    <section
+      class="sobrenosotros page-section bg-primary back_color"
+      id="about"
+    >
+      <div class="container px-4 px-lg-5 pad_lg">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Visión</h2>
+            <hr class="divider divider-light" />
+            <p class="text-white-75 mb-4 p_quienessomos">
+              El Profesorado de Educación Física Juan Pablo II como Institución
+              dedicada a la enseñanza y difusión de contenidos de su área de
+              conocimiento, pretende ser reconocido por el alto nivel académico
+              de sus egresados, de su equipo docente y por el clima de igualdad
+              y pluralismo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 px-lg-5 pad_lg">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Misión</h2>
+            <hr class="divider divider-light" />
+            <p class="text-white-75 mb-4 p_quienessomos">
+              Contribuir al desarrollo humano integral mediante la educación en
+              valores en el campo de las ciencias aplicadas a la actividad
+              física. Brindar igualdad de oportunidades a los jóvenes egresados
+              del Nivel Medio, brindando contención y acompañamiento a los más
+              necesitados.
+            </p>
           </div>
         </div>
       </div>
@@ -333,14 +426,33 @@
       </div>
     </section>
 
+    <!-------------------------------------------------------- SECTION BTN CAMPUS ------------------------------------------------------------->
+
+    <section
+      class="sobrenosotros page-section bg-primary back_color"
+      id="about"
+    >
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Nuestro campus</h2>
+            <hr class="divider divider-light" />
+            <p class="text-white-75 mb-4 p_quienessomos">
+              Aquí, los estudiantes pueden visualizar sus materias, consultar
+              notas, acceder a recursos educativos y participar en actividades
+              virtuales. Simplificamos el proceso de seguimiento académico,
+              brindándote todo lo que necesitas en un solo lugar.
+            </p>
+            <a class="btn btn-light btn-xl button-27" href="#services"> ir </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-------------------------------------------------------- SECTION CALL TO ACTION / CONTACTO A WPP CON BOTON ------------------------------------------------------------->
 
     <!--COUNTER-->
-    <section id="section_counter" class="border-bottom border-top">
-      <!-- <div class="container">
-            <h1 class="section-heading">We've completed</h1>
-      </div> -->
-
+    <section id="section_counter" class="border-top">
       <div class="container container_counter">
         <div class="counter-grid">
           <div class="counter-item">
@@ -350,48 +462,32 @@
               class="counter-img"
             />
             <p class="counter_p">
-              Contamos con más de 2000 estudiantes graduados en Educación
-              Fisica.
+              Contamos con más de 2000 estudiantes <br class="br_counter_1" />
+              graduados en Educación Fisica.
             </p>
 
-            <h6 class="counter" data-target="0">+2000</h6>
+            <div class="container_h6">
+              <h6 class="counter">+</h6>
+              <h6 class="counter" data-target="2000">0</h6>
+            </div>
           </div>
           <div class="counter-item">
             <img
-              src="./assets/countup/app-number-counter-student.svg"
+              src="./assets/countup/teacher.svg"
               alt="Image"
               class="counter-img"
             />
             <p class="counter_p">
-              Hace más de 10 años que nos dedicamos a la formación de futuros
-              profesores de Educación Fisica.
+              Hace más de 10 años que nos dedicamos a la formación
+              <br class="br_counter_2" />
+              de futuros profesores de Educación Fisica.
             </p>
-            <h1 class="counter" data-target="10">+10</h1>
+
+            <div class="container_h6">
+              <h6 class="counter">+</h6>
+              <h6 class="counter" data-target="10">0</h6>
+            </div>
           </div>
-          <!-- <div class="counter-item">
-            <!-- <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <p class="counter_p">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
-              deleniti.
-            </p>
-            <h1 class="counter" data-target="80">0</h1>
-          </div> --> 
-          <!-- <div class="counter-item">
-            <img
-              src="./assets/countup/app-number-counter-student.svg"
-              alt="Image"
-              class="counter-img"
-            />
-            <p class="counter_p">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
-              deleniti.
-            </p>
-            <h1 class="counter" data-target="60">0</h1>
-          </div> -->
         </div>
       </div>
     </section>
@@ -404,107 +500,67 @@
           <div class="col-lg-8 col-xl-6 text-center">
             <h2 class="mt-0">Contacto</h2>
             <hr class="divider" />
-            <!-- <p class="text-muted mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis eligendi voluptatum dolor culpa dicta corporis
-              voluptates, optio accusantium tempora! Quos!
-            </p> -->
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form action="https://formspree.io/f/xvojygqy" method="POST">
               <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
-                  id="name"
                   type="text"
-                  placeholder="Enter your name..."
-                  data-sb-validations="required"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Ingrese nu nombre..."
+                  required
                 />
-                <label for="name">Nombre completo</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  Un nombre es requerido.
-                </div>
+                <label for="nombre">Nombre completo</label>
               </div>
+
               <!-- Email address input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="name@example.com"
-                  data-sb-validations="required,email"
+                  required
                 />
                 <label for="email">Dirección de email </label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  Una dirección de email requerida.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  dirección de email invalida.
-                </div>
               </div>
+
               <!-- Phone number input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="(123) 456-7890"
-                  data-sb-validations="required"
+                  id="telefono"
+                  type="number"
+                  placeholder="+54 1456-7890"
+                  required
+                  name="telefono"
                 />
-                <label for="phone">Número de teléfono </label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  Número de teléfono requerido.
-                </div>
+                <label for="telefono">Número de teléfono </label>
               </div>
-              <!-- Message input-->
+
               <div class="form-floating mb-3">
                 <textarea
                   class="form-control"
-                  id="message"
-                  type="text"
-                  placeholder="Enter your message here..."
-                  style="height: 10rem"
-                  data-sb-validations="required"
+                  placeholder="ingrese su mensaje..."
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                  required
                 ></textarea>
-                <label for="message">Mensaje</label>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  Un Mensaje es requerido.
-                </div>
+
+                <label for="mensaje">Mensaje:</label>
               </div>
-              <!-- Submit success message-->
-              <!---->
-              <!-- This is what your users will see when the form-->
-              <!-- has successfully submitted-->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">¡Envío de formulario exitoso!</div>
-                  <!--                   To activate this form, sign up at
- -->
-                  <br />
-                  <a href="https://startbootstrap.com/solution/contact-forms"
-                    >https://startbootstrap.com/solution/contact-forms</a
-                  >
-                </div>
-              </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">
-                  ¡Error al enviar el mensaje!
-                </div>
-              </div>
-              <!-- Submit Button-->
+
               <div class="d-grid">
                 <button
-                  class="btn-enviar btn btn-primary btn-xl disabled"
+                  class="btn-enviar btn btn-primary btn-xl"
                   id="submitButton"
                   type="submit"
                 >
@@ -543,16 +599,6 @@
         </div>
       </div>
     </section>
-
-    <!------------------------------->
-
-    <!--     <script
-      src="https://static.elfsight.com/platform/platform.js"
-      data-use-service-core
-      defer
-    ></script>
-    <div class="elfsight-app-3f221b4b-391c-4f38-83cf-ac6e283b72f1"></div>
- -->
 
     <!-------------------------------------------------------- FOOTER ------------------------------------------------------------->
 
@@ -625,10 +671,12 @@
               <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
               <p class="p_mail">
                 <i class="bi bi-envelope-fill me-3"></i>
-                Arielgomezdeportes@icloud.com
+                inst.juanpablo02@gmail.com
               </p>
               <p><i class="bi bi-telephone-fill me-3"></i> +54 11 2346 6491</p>
-              <p><i class="bi bi-telephone-fill me-3"></i> +54 348 440 6840</p>
+              <p>
+                <i class="bi bi-telephone-fill me-3"></i> +54 9 11 5132 6469
+              </p>
             </div>
           </div>
         </div>
@@ -646,7 +694,7 @@
         Hecho por
         <p class="text-reset fw-bold footer_copyright_p webstudio_a">
           <a
-            href="https://joaquinsuarez22.github.io/WebStudio/"
+            href="https://webstudiooficial.com/"
             class="webstudio_a"
             target="_blank"
             >WebStudio
@@ -674,6 +722,9 @@
     <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   </body>
 
   <link
@@ -681,7 +732,7 @@
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
   />
 
-  <a href="https://wa.me/5491112341234" class="float zoom" target="_blank">
+  <a href="https://wa.me/+5491151326469" class="float zoom" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 </html>

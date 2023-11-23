@@ -32,14 +32,12 @@ body.addEventListener("click", (e) => {
   }
 });
 
-
 /*-------------------------------------------*/
 
+/*count up*/
 
-/*count up*/ 
-
-let section_counter = document.querySelector('#section_counter');
-let counters = document.querySelectorAll('.counter-item .counter');
+let section_counter = document.querySelector("#section_counter");
+let counters = document.querySelectorAll(".counter-item .counter");
 
 // Scroll Animation
 
@@ -62,7 +60,7 @@ let CounterObserver = new IntersectionObserver(
       UpdateCounter();
 
       if (counter.parentElement.style.animation) {
-        counter.parentElement.style.animation = '';
+        counter.parentElement.style.animation = "";
       } else {
         counter.parentElement.style.animation = `slide-up 0.3s ease forwards ${
           index / counters.length + 0.5

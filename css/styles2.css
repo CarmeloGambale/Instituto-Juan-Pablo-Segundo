@@ -16,8 +16,7 @@
   --gris-4: #343a40;
 
   --negro-1: #343a40;
-  /*   --azul-logo-nuevo: #197086;
- */
+
   --rojo-logo-nuevo: #fc3434;
   /*colores del logo*/
 
@@ -56,11 +55,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ::selection {
-  background-color: var(--blanco-1);
-  color: var(--azul-logo);
-} */
-
 /*colores background y btn*/
 
 .back_color {
@@ -94,8 +88,7 @@ header.masthead {
       rgba(92, 77, 66, 0.8) 100%
     ),
     url("../assets/img/fondo_pelotas.webp");
-  /*     background-image: url(../assets/img/fondo_pelotas.webp);
- */
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -114,13 +107,16 @@ header.masthead {
   justify-content: center;
 }
 
+.section_contacto {
+  padding: 10rem 0 !important;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   height: 70px;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.349); */
   background-color: white;
   background-image: url(../assets/img/noise.png);
   z-index: 100;
@@ -243,10 +239,6 @@ nav .nav-bar .logo a {
     left: -0%;
   }
 
-  .navlogo2 {
-    display: none;
-  }
-
   .logo-2 {
     color: black !important;
     font-size: 14px;
@@ -297,6 +289,39 @@ nav .nav-bar .logo a {
   }
 }
 
+.container_navlog {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-height: 800px) {
+  header.masthead {
+    min-height: 50rem;
+  }
+}
+
+.container_header_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.texto_diagep {
+  font-size: 14px !important;
+}
+
+@media (max-width: 400px) {
+  .navlogo2,
+  .texto_diagep {
+    font-size: 14px !important;
+  }
+
+  nav .nav-bar {
+    padding: 0 2px;
+  }
+}
+
 /*--------------------------------------------------------*/
 
 /*QUIENES SOMOS*/
@@ -308,6 +333,12 @@ nav .nav-bar .logo a {
 
 .sobrenosotros {
   background-color: var(--azul-francia) !important;
+}
+
+@media (max-width: 500px) {
+  .p_quienessomos {
+    text-align: start;
+  }
 }
 
 /*--------------------------------------------------------*/
@@ -331,10 +362,15 @@ nav .nav-bar .logo a {
 .logos-inscripcion {
   color: var(--rojo-logo-nuevo) !important;
 }
-@media screen and (max-width: 420px) {
-  .logos-inscripcion{
-    width: 3rem;
-    height: 4rem;
+
+/*--------------------------------------------------------*/
+
+/*vision mision*/
+
+@media (min-width: 992px) {
+  .pad_lg {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
   }
 }
 
@@ -433,29 +469,9 @@ nav .nav-bar .logo a {
   padding: 0 1rem;
 }
 
-/* section:not(#section_counter) {
-  height: 100vh;
-} */
 .section-heading {
   font-size: 4rem;
 }
-
-/* #pricing {
-     background: var(--bg-hero);
- 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-/* #section_counter {
-  /* padding: 10rem 0; */
-  /*   background: var(--bg-counter);
- */
-  /*   margin-bottom: 10rem;
- */
-
-  /*background-color: var(--azul-francia);*/
-
 
 #section_counter .section-heading {
   padding-bottom: 5rem;
@@ -470,11 +486,7 @@ nav .nav-bar .logo a {
 }
 
 .counter-item {
-  /*   background: var(--naranja2-logo);
- */
-  /*   background-color: rgba(0, 0, 0, 0.1);
- */
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem;
   text-align: center;
   border-radius: 1rem;
   transition: all 0.5s ease-in-out;
@@ -486,34 +498,20 @@ nav .nav-bar .logo a {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
-  
 }
 
 .counter-img:nth-child(1) {
   width: 6rem;
   height: auto;
-  color: var(--rojo-logo-nuevo)!important;
+  color: var(--rojo-logo-nuevo) !important;
 }
 
-/* .counter-item:hover {
-  background: var(--naranja1-logo);
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-} */
 .counter-item .counter {
   font-size: 3rem;
   color: transparent;
   color: transparent;
   letter-spacing: 0.5rem;
-  color: var(--rojo-logo-nuevo)!important;
-  /* -webkit-text-stroke-width: 0.15rem;
-  -moz-text-stroke-width: 0.15rem;
-  -ms-text-stroke-width: 0.15rem;
-  -o-text-stroke-width: 0.15rem;
-  -webkit-text-stroke-color: var(--white);
-  -moz-text-stroke-color: var(--white);
-  -ms-text-stroke-color: var(--white);
-  -o-text-stroke-color: var(--white); */
+  color: var(--rojo-logo-nuevo) !important;
 }
 
 @keyframes slide-up {
@@ -534,6 +532,7 @@ nav .nav-bar .logo a {
 .counter_p {
   margin-top: 1rem;
   color: black;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 420px) {
@@ -544,10 +543,10 @@ nav .nav-bar .logo a {
   .counter-img:nth-child(1) {
     width: 4rem;
     height: auto;
-    color: var(--rojo-logo-nuevo)!important;
+    color: var(--rojo-logo-nuevo) !important;
   }
-  
-  .counter-item .counter{
+
+  .counter-item .counter {
     font-size: 2rem;
   }
   .counter-item {
@@ -560,6 +559,50 @@ nav .nav-bar .logo a {
     justify-content: center;
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 1255px) {
+  .br_counter_2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .br_counter_1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .br_counter_1 {
+    display: flex;
+  }
+
+  .br_counter_2 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .br_counter_1 {
+    display: flex;
+  }
+
+  .br_counter_2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .br_counter_1 {
+    display: none;
+  }
+}
+
+.container_h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------*/
@@ -662,8 +705,6 @@ nav .nav-bar .logo a {
 /*FOOTER*/
 
 footer {
-  /*   margin-top: 2rem;
- */
   background-color: var(--blanco-carpi) !important;
   background-image: url(Img/noise.png);
 }
@@ -800,10 +841,6 @@ footer {
     width: 100%;
   }
 }
-
-/* .footer_copyright_p {
-  color: var(--naranja2-logo) !important;
-} */
 
 .webstudio_a {
   color: var(--azul-webstudio) !important;
@@ -977,3 +1014,13 @@ footer {
 }
 
 /*--------------------------------------------------------*/
+
+textarea {
+  min-height: 200px !important;
+  max-height: 500px !important;
+}
+
+
+#about{
+  overflow: hidden;
+}
