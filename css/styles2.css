@@ -1019,3 +1019,8 @@ textarea {
   min-height: 200px !important;
   max-height: 500px !important;
 }
+
+
+#about{
+  overflow: hidden;
+}
