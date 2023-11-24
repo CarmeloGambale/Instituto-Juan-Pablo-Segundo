@@ -296,7 +296,7 @@ nav .nav-bar .logo a {
 
 @media (max-height: 800px) {
   header.masthead {
-    min-height: 50rem;
+    min-height: 60rem;
   }
 }
 
